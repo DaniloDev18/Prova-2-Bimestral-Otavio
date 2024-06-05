@@ -1,0 +1,92 @@
+body {
+    background-color: #6b6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font: Arial;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    animation: 1s ease-in-out forwards animate__animated animate__bounceInLeft;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #9d9d9d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b32a;
+    transition: 1.0s;
+
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animacao-entrada {
+    animation: entrada 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #00b32a;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+#tabela.fadeOut {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+input{
+    border: none;
+}
